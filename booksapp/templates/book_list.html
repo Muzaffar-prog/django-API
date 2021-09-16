@@ -1,0 +1,14 @@
+<title> Book </title>
+
+<h1> Barcha kitoblar to'plami </h1>
+
+{% for kitob in kitoblar %}
+
+  <ul>
+    <li> <b> Nomi: {{ kitob.title }} </b></li>
+    <li> Izohi: {{ kitob.subtitle }} </li>
+    <li> Yozuvchi: {{ kitob.author }} </li>
+    <li> ISBN: {{ kitob.isbn }} </li>
+  </ul>
+
+{% endfor %}
